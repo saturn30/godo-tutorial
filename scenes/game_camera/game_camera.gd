@@ -9,7 +9,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	acquire_target()
 	if global_position.distance_to(target_position) > 1:
-		global_position = global_position.lerp(target_position, 0.5)
+		global_position = global_position.lerp(target_position, 1 - exp(-delta * 30))
 
 func acquire_target():
 	var player_nodes = get_tree().get_nodes_in_group("player")

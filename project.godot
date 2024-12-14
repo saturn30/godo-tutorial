@@ -15,6 +15,10 @@ run/main_scene="res://scenes/main/main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[debug]
+
+gdscript/warnings/unused_parameter=0
+
 [display]
 
 window/size/viewport_width=640
@@ -50,6 +54,19 @@ move_up={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Terrain"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemy"
+2d_physics/layer_4="EnemyCollision"
+2d_physics/snap/snap_2d_transforms_to_pixel=false
+2d_physics/warnings/unused_parameter=0
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+2d/warnings/unused_parameter=0
+2d/layer_3="Enemy"
+2d/layer_2="Player"
+2d/layer_1="Terrain"
